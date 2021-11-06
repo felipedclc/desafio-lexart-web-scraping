@@ -8,8 +8,8 @@ CORS(app)
 
 
 @app.route("/")
-def hello():
-    return "Hello World"
+def welkome():
+    return 'Welcome to my app!'
 
 
 @app.route("/<string:product>")
