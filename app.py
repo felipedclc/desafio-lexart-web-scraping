@@ -9,7 +9,7 @@ CORS(app)
 
 @app.route("/")
 def welkome():
-    return 'Welcome to my app!'
+    return '<h1> Welcome to my app! </h1>'
 
 
 @app.route("/<string:product>")
@@ -20,5 +20,4 @@ def index(product):
 
 
 if __name__ == "__main__":
-    # run app in debug mode on port 5000
     app.run(debug=True, port=5000)
